@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud Automation Platform</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #0b1220;
+            --card: #111827;
+            --border: #1f2937;
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+            --green: #22c55e;
+            --blue: #3b82f6;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        /* HEADER */
+        .header {
+            background: linear-gradient(90deg, #0f172a, #111827);
+            padding: 25px 40px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 26px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .header p {
+            margin: 6px 0 0;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        /* MAIN */
+        .container {
+            padding: 30px 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* CARD DESIGN */
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: var(--blue);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+
+        .item {
+            margin: 10px 0;
+            font-size: 14px;
+            color: var(--text);
+        }
+
+        .label {
+            color: var(--muted);
+        }
+
+        .status {
+            color: var(--green);
+            font-weight: 600;
+        }
+
+        /* ARCHITECTURE */
+        .mono {
+            background: #0f172a;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: monospace;
+            color: #60a5fa;
+            margin-top: 10px;
+        }
+
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: var(--muted);
+            border-top: 1px solid var(--border);
+            margin-top: 30px;
+        }
+
+        /* SMALL BADGE STYLE */
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            font-size: 11px;
+            border-radius: 6px;
+            background: #1e293b;
+            color: var(--blue);
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>Cloud Automation Platform</h1>
+    <p>AWS Infrastructure (Terraform) → Docker Containerization → EC2 Deployment</p>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <div class="grid">
+
+        <!-- INFRASTRUCTURE -->
+        <div class="card">
+            <h2>Infrastructure Overview</h2>
+
+            <div class="item">Provisioning Tool: <span class="badge">Terraform</span></div>
+            <div class="item">Cloud Provider: AWS</div>
+            <div class="item">Compute: EC2</div>
+            <div class="item">Container: Docker</div>
+            <div class="item">Backend: Flask</div>
+        </div>
+
+        <!-- STATUS -->
+        <div class="card">
+            <h2>System Status</h2>
+
+            <div class="item">EC2 Instance: <span class="status">Running</span></div>
+            <div class="item">Docker Container: <span class="status">Active</span></div>
+            <div class="item">Flask App: <span class="status">Healthy</span></div>
+            <div class="item">Port: 5000</div>
+        </div>
+
+        <!-- ARCHITECTURE -->
+        <div class="card">
+            <h2>Architecture Flow</h2>
+
+            <div class="mono">
+User → Internet → AWS EC2 → Docker → Flask App
+            </div>
+        </div>
+
+        <!-- DEPLOYMENT -->
+        <div class="card">
+            <h2>Deployment Details</h2>
+
+            <div class="item">OS: Amazon Linux 2023</div>
+            <div class="item">Build Tool: Docker</div>
+            <div class="item">Infra as Code: Terraform</div>
+            <div class="item">Deployment: EC2 Instance</div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Cloud DevOps Project | AWS + Terraform + Docker + Flask
+    </div>
+
+</div>
+
+</body>
+</html>
